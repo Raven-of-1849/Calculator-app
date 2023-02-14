@@ -4,8 +4,7 @@
   border: 0;
 }
 
-body {
-}
+
 
 #calculator-interface {
   display: grid;
@@ -20,15 +19,23 @@ body {
    "zero equal equal multiply ";
   background-color: #88f;
   height: 30rem;
-  width: 28rem;
+  width: 24rem;
   margin: 22vh auto;
+  grid-gap: 7px;
 }
 
 .calc-screen {
-  background-color: #ff4;
-  border: 20px solid teal;
+  background-color: #88f;
+  border: 1rem solid #80819C;
+  border-radius: 0 0 6px 6px;
   text-align: center;
   grid-area: cal;
+}
+.unitScreen {
+  position: relative;
+  top: 2.5rem;
+  color: snow;
+  font-size: 1.6rem;
 }
 
 .number-one {
@@ -85,8 +92,8 @@ body {
  }
 
 button {
-  border: 2px solid red;
-  background-color: green;
+  /* border: 2px solid red;
+  background-color: green; */
   width: 100%;
   height: 100%;
 }
