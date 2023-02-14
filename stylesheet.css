@@ -1,23 +1,92 @@
-#calculator {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 10rem
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-#display {
-  background-color: #fff;
-  height: 80px;
-  font-size: 36px;
-  text-align: right;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+body {
 }
 
-.col-md-3 >button {
+#calculator-interface {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "cal cal cal cal"
+  "clear clearAll clearAll add"
+  "one two three add"
+   "four five six divide"
+   "seven eight nine subtract"
+   "zero equal equal multiply ";
+  background-color: #88f;
+  height: 30rem;
+  width: 28rem;
+  margin: 22vh auto;
+}
+
+.calc-screen {
+  background-color: #ff4;
+  border: 20px solid teal;
+  text-align: center;
+  grid-area: cal;
+}
+
+.number-one {
+  grid-area: one;
+}
+
+.number-two {
+  grid-area: two;
+}
+.number-three {
+  grid-area: three;
+}
+.number-four {
+  grid-area: four;
+}
+.number-five {
+  grid-area: five;
+}
+.number-six {
+  grid-area: six;
+}
+.number-seven {
+  grid-area: seven;
+}
+.number-eight {
+  grid-area: eight;
+}
+.number-nine {
+  grid-area: nine;
+}
+.number-zero {
+  grid-area: zero;
+}
+ .add {
+   grid-area: add;
+ }
+ .subtract {
+   grid-area: subtract;
+ }
+ .multiply {
+   grid-area: multiply;
+ }
+ .divide {
+   grid-area: divide;
+ }
+ .equal {
+   grid-area: equal;
+ }
+ .clear {
+   grid-area: clear;
+ }
+ .clearAll {
+   grid-area: clearAll;
+ }
+
+button {
+  border: 2px solid red;
+  background-color: green;
   width: 100%;
-  height: 60px;
-  font-size: 24px;
-  margin-bottom: 10px;
+  height: 100%;
 }
